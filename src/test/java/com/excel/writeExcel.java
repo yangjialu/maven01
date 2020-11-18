@@ -26,10 +26,10 @@ public class writeExcel {
 
         // 找到cell对应的sheet与row
         Sheet sheet = wb.getSheetAt(0);
-        Row row = sheet.getRow(2);
+        Row row = sheet.getRow(1);
         Cell cell = row.getCell(1);
         cell.setCellType(CellType.STRING);
-        cell.setCellValue("家庭");
+        cell.setCellValue("sam");
 
         //把修改的内容回写至excel
         FileOutputStream fo = new FileOutputStream("sd.xlsx");
