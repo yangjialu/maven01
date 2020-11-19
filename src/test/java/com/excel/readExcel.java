@@ -1,8 +1,6 @@
 package com.excel;
-
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -11,7 +9,7 @@ public class readExcel {
     public static void main(String[] args) throws IOException, InvalidFormatException {
         // java读取excel内容，打印在控制台上
 
-        // 打开excel
+        // 找到excel
        FileInputStream file = new FileInputStream("sd.xlsx");
 
        // 双击打开
@@ -25,7 +23,7 @@ public class readExcel {
         //System.out.println(sheet.getPhysicalNumberOfRows()); 最大行数
 
         // 获取row
-        for (int i = 0; i <= sheet.getLastRowNum(); i++) {
+        for (int i = 1; i <= sheet.getLastRowNum(); i++) {
             Row row = sheet.getRow(i);
 
             //System.out.println(row.getLastCellNum()); //列数索引最大值
