@@ -1,5 +1,6 @@
 public class Demo {
     public static void main(String[] args) {
+        int m = 0;
         int i = 20; int j = 18;
         int i1 = i++;
         System.out.println("i = " + i);
