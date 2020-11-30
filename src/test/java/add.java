@@ -1,6 +1,6 @@
 public class add {
     public static void main(String[] args) {
-        // 输出101到200内的质数
+        // 输出101到200内的质数。。。
         int count =0;
         for (int i=101; i<200; i++) {
             boolean f = true;
