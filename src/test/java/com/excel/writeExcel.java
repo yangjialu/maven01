@@ -29,7 +29,7 @@ public class writeExcel {
         Row row = sheet.getRow(1);
         Cell cell = row.getCell(3);
         cell.setCellType(CellType.STRING);
-        cell.setCellValue("杭州");
+        cell.setCellValue("南昌");
 
         //把修改的内容回写至excel
         FileOutputStream fo = new FileOutputStream("sd.xlsx");
