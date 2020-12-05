@@ -21,7 +21,7 @@ public class Demo {
         //json字符串数组转为list集合
         //String json = "[{name: '张三', age: 56}, {name: '李四', age: 22}]";
         // ctl+alt+v
-       // List<Student> students = JSONObject.parseArray(json, Student.class);
+        // List<Student> students = JSONObject.parseArray(json, Student.class);
         //System.out.println(students);
 
     }
