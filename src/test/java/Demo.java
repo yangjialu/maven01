@@ -1,3 +1,6 @@
+import static com.codeborne.selenide.Selenide.*;
+
+
 public class Demo {
     public static void main(String[] args) {
         int m = 0;
@@ -16,6 +19,9 @@ public class Demo {
         System.out.println("j3 = " + j3);
         System.out.println("j = " + j);
 
+
     }
+
+
 
 }
