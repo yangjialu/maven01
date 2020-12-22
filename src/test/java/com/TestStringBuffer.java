@@ -2,7 +2,8 @@ package com;
 
 public class TestStringBuffer {
     public static void main(String[] args) {
-        String s = "Mircosoft";
+//        String s = "Mircosoft";
+        String s = new String("Mircosoft");
         char[] x = {'a', 'b', 'c'};
         StringBuffer sb1 = new StringBuffer(s);
         sb1.append("/").append("IBM").append("/").append("Sun");
