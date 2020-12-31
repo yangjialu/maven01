@@ -3,10 +3,14 @@ public class TestEquals {
         Cat c1 = new Cat(1, 2, 3);
         Cat c2 = new Cat(1, 2, 3);
         System.out.println(c1.equals(c2));
-        String s1 = new String("hello");
-        String s2 = new String("hello");
+        String s1 = "hello";
+        String s2 = "hello";
+        String s3 = new String("你好");
+        String s4 = new String("你好");
         System.out.println(s1 == s2);
         System.out.println(s1.equals(s2));
+        System.out.println(s3 == s4);
+        System.out.println(s3.equals(s4));
     }
 }
 
