@@ -2,7 +2,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TestListMethd {
+public class TestListMethod {
     public static void main(String[] args) {
         List l1 = new LinkedList();
         List l2 = new LinkedList();
