@@ -2,9 +2,8 @@ import java.util.*;
 
 public class TestElementNum {
     public static void main(String[] args) {
-        String s = "asdfdbfufblkseeereiojiklmnlnncnjdkdndjddnl";
-        Map m = new HashMap();
-
+        String s = "asdfdbfufblkseeereiojiklmnlnncnjdkdndjddnlkprtuvwxyzxyz";
+        Map<String, Integer> m = new HashMap();
         /*
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
@@ -18,7 +17,13 @@ public class TestElementNum {
          */
         String[] arr = s.split("");
         for (int i = 0; i < arr.length; i++) {
-            m.put(arr[i], m.get(arr[i]) == null? 1:(Integer)m.get(arr[i]) + 1);
+
+            if (m.containsKey(arr[i])) {
+                m.put(arr[i], m.get(arr[i]) + 1);
+            }else {
+                m.put(arr[i], 1);
+            }
+            //m.put(arr[i], m.get(arr[i]) == null? 1:m.get(arr[i]) + 1);
         }
         System.out.println("单词数：" + m.size());
         System.out.println(m);
