@@ -5,7 +5,8 @@ public class TestFileInputStream {
         int b = 0;
         FileInputStream in = null;
         try {
-            in = new FileInputStream("E:\\maven01\\src\\test\\java\\TestFileInputStream.java");
+            in = new FileInputStream(
+                    System.getProperty("user.dir") + "\\src\\test\\java\\TestFileInputStream.java");
         } catch (FileNotFoundException e) {
             System.out.println("找不到文件");
             System.exit(-1);

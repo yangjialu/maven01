@@ -3,7 +3,7 @@ import java.io.*;
 public class TestBufferedInputStream {
     public static void main(String[] args) {
         try {
-            FileInputStream fis = new FileInputStream("E:\\maven01\\date.txt");
+            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +"\\date.txt");
             BufferedInputStream bis = new BufferedInputStream(fis);
             int c = 0;
             System.out.println(bis.read());

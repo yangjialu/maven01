@@ -5,7 +5,8 @@ public class TestFileReader {
         int b = 0;
         FileReader fr = null;
         try {
-            fr = new FileReader("E:\\maven01\\src\\test\\java\\TestFileInputStream.java");
+            fr = new FileReader(
+                    System.getProperty("user.dir") + "\\src\\test\\java\\TestFileInputStream.java");
         } catch (FileNotFoundException e) {
             System.out.println("找不到文件");
             System.exit(-1);

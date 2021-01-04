@@ -6,8 +6,10 @@ public class TestFileWriter {
         FileReader fr = null;
         FileWriter fw = null;
         try {
-            fr = new FileReader("E:\\maven01\\src\\test\\java\\TestFileInputStream.java");
-            fw = new FileWriter("E:\\maven01\\src\\test\\java\\HelloWorld.java");
+            fr = new FileReader(
+                    System.getProperty("user.dir") + "\\src\\test\\java\\TestFileInputStream.java");
+            fw = new FileWriter(
+                    System.getProperty("user.dir") + "\\src\\test\\java\\HelloWorld.java");
             while ((b=fr.read()) != -1){
                 fw.write(b);
             }

@@ -9,8 +9,10 @@ public class TestFileOutputStream {
         FileInputStream in = null;
         FileOutputStream out = null;
         try {
-            in = new FileInputStream("E:\\maven01\\src\\test\\java\\TestFileInputStream.java");
-            out = new FileOutputStream("E:\\maven01\\src\\test\\java\\HelloWorld.java");
+            in = new FileInputStream(
+                    System.getProperty("user.dir") + "\\src\\test\\java\\TestFileInputStream.java");
+            out = new FileOutputStream(
+                    System.getProperty("user.dir") + "\\src\\test\\java\\HelloWorld.java");
             while ((b=in.read()) != -1){
                 out.write(b);
             }
