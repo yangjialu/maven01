@@ -19,6 +19,7 @@ public class TestObjectStream {
 
 
 class T implements Serializable {
+    //标记型接口
     int i = 10;
     int j = 9;
     double d = 2.3;
