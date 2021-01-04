@@ -12,7 +12,7 @@ public class TestList {
         System.out.println(l1);
         l1.set(6, "a200");
         System.out.println(l1);
-        System.out.print((String)l1.get(2) + " ");
+        System.out.print(l1.get(2) + " ");
         System.out.println(l1.indexOf("a200"));
         l1.remove(2);
         System.out.println(l1);
