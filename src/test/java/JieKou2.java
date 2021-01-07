@@ -9,4 +9,5 @@ public class JieKou2 implements JieKou1 {
         System.out.println("家禄睡觉");
     }
 
+
 }

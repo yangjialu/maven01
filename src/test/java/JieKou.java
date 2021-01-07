@@ -7,4 +7,12 @@ public interface JieKou {
     public void start();
     public void run();
     public void stop();
+
+    public default void sleep() {
+        System.out.println("睡觉");
+    }
+
+    public static void eat() {
+        System.out.println("吃饭");
+    }
 }
