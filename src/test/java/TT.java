@@ -8,8 +8,8 @@ public class TT implements Runnable{
         System.out.println("b = " + b);
     }
 
-    public synchronized void m2() throws InterruptedException {
-        Thread.sleep(2500);
+    public void m2() throws InterruptedException {
+        Thread.sleep(1000);
         b = 2000;
     }
 
@@ -28,5 +28,6 @@ public class TT implements Runnable{
         t.start();
 
         tt.m2();
+        System.out.println(tt.b);
     }
 }

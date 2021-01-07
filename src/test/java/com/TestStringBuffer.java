@@ -5,7 +5,7 @@ public class TestStringBuffer {
 //        String s = "Mircosoft";
         String s = new String("Mircosoft");
         char[] x = {'a', 'b', 'c'};
-        StringBuffer sb1 = new StringBuffer(s);
+        StringBuilder sb1 = new StringBuilder(s);
         sb1.append("/").append("IBM").append("/").append("Sun");
         System.out.println(sb1);
 
