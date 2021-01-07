@@ -1,5 +1,5 @@
 public interface JieKou1 {
-    void sing();
+    public abstract void sing();
     void sleep();
 
     public default void a() {
@@ -25,8 +25,8 @@ class TestInterface implements JieKou1 {
 
     @Override
     public void a() {
-        System.out.println("这是重写");
-    }
+        System.out.println("这是重写非抽象方法");
+    } //非抽象方法重写不能加default，静态方法不能重写
 
     public static void main(String[] args) {
         TestInterface t = new TestInterface();
