@@ -18,7 +18,9 @@
                 </configuration>
             </plugin>
         </plugins>
+
     </build>
+
     <dependencies>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -51,11 +53,26 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.13.8</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
-
-
-
+    <properties>
+        <aspectj.version>1.8.10</aspectj.version>
+    </properties>
 
 
 </project>
